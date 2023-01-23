@@ -1,5 +1,5 @@
-var p= document.getElementById("edad_java"); // capturo span edad_java, y ...
-p.innerText=calc_edad(22,05,1968);            //cambio su texto
+let p= document.getElementById("edad_java"); // capturo span edad_java, y ...
+p.innerText=calc_edad(22,05,1968);            //cambio su texto por mi edad
 
 
 // calcula edad en años
@@ -16,13 +16,13 @@ function calc_edad(dia,mes,año)
 
 
  // Ventana modal
-var modal = document.getElementById("ventanaModal");
+let modal = document.getElementById("ventanaModal");
 
 // Botón que abre el modal
-var boton = document.getElementById("abrirModal");
+let boton = document.getElementById("abrirModal");
 
 // Elemento <span> que tiene la X que cierra la ventana
-var span = document.getElementsByClassName("cerrar")[0];
+let span = document.getElementsByClassName("cerrar")[0];
 
 
 // Cuando el usuario hace click en el botón, se abre la ventana

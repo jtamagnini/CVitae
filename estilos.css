@@ -1,32 +1,35 @@
-/* box-sizing definido por Bootstrap
+/* box-sizing definido ya por Bootstrap
 * {
     box-sizing: border-box;
   }
 */
   
-/*
+/* */
 body {
-    background-color: brown;
-    }
+    background-color: rgb(226, 234, 241);
+}
 
- 
-
-h1 {
-    color: blue;
-    }
-p {
+/*
+    p {
     color: red;
     }
 */
 
-/*  */
 h1 {
+    color: blue;  
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 40px;
     padding-bottom: 20px;
     font-family: 'Silkscreen', cursive;
-    }
+}
+
+.h2 {
+  text-align: left;
+  margin-top: 50px;
+  border-bottom: rgb(67, 34, 129) solid;
+
+}
 
 /*
 img {
@@ -39,29 +42,76 @@ img {
 
 */
 
-.jjt {
+/* los iconos de bootstrap */
+.i-fb {
+  font-size: 20px;
+  color: blue;
+  padding-right: 5px;
+}
+
+.i-youtube {
+  font-size: 20px;
+  color: red;
+  padding-right: 5px;
+}
+
+.i-mail {
+  font-size: 20px;
+  color: rgb(255, 208, 0);
+  padding-right: 5px;
+}
+
+.i-te {
+  font-size: 20px;
+  color: rgb(0, 255, 34);
+  padding-right: 5px;
+}
+
+/* son de la navbar de bootstrap */
+
+.navbar-collapse {
+  align-items:center;
+  /* justify-content: space-between; */
+}
+
+@media screen and (max-width: 767px ){
+ .navbar-brand {
+     display: none;
+  }
+
+}
+
+.datos {
+  
+}
+
+.experiencia {
+  
+}
+
+
+.periodo {
   margin-bottom: 40px;
 }
 
-.datos h2 {
+.subtitulo h2 {
   font-size: 1.5rem;
   color: #615151;
-  text-align: center;
+  /*text-align: center;*/
 }    
+
 .col1 {
-    text-align: right;
+    text-align: left;
+    /*padding-left: 100px;*/
 }
 
-.habilidades {
-    padding: 40px 40px 60px 40px;
-  }
 .habilidad-titulo {
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0;
-  }
+}
 
-  .columna {
+.columna {
     padding: 20px;
     border: 2px solid #8080804d;
     display: flex;
@@ -69,19 +119,20 @@ img {
     align-items: center;
     justify-content: space-evenly;
     transition: all 0.2s ease-in;
-  }
+}
 
 /* Pie de pagina */
   
 .footer-texto {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 20px;
     margin-bottom: 30px;
+    border-top: solid;
 }
 
 /* Fondo modal: negro con opacidad al 50% */
 .modal {
-  display: none; /* Por defecto, estará oculto */
+  display: none; /* Por defecto, subtituloará oculto */
   position: fixed; /* Posición fija */
   z-index: 1; /* Se situará por encima de otros elementos de la página*/
   padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
@@ -100,7 +151,7 @@ img {
   margin: auto; /* Centrada */
   padding: 20px;
   width: 60%;
- }
+}
 
 
 /* Botón cerrar */
