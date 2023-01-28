@@ -1,5 +1,5 @@
 let p= document.getElementById("edad_java"); // capturo span edad_java, y ...
-p.innerText=calc_edad(22,05,1968);            //cambio su texto por mi edad
+p.innerText=calc_edad(22,05,1968);            //cambio su texto por mi edad!
 
 
 // calcula edad en años
@@ -8,10 +8,10 @@ function calc_edad(dia,mes,año)
     const hoy = new Date();
     let años  = hoy.getFullYear() - año;
    // Los meses en Date empiezan en 0, por eso sumo 1
-  if (mes > (hoy.getMonth() + 1) || dia > hoy.getDate())
+  if (mes > (hoy.getMonth() + 1) || dia > hoy.getDate()) // javascript aplica short-circuit!
       años--;
   //console.log(años);
-  return años
+  return años;
 }
 
 
